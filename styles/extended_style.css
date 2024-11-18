@@ -1,0 +1,82 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Заголовок */
+header {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    color: #fff;
+}
+
+/* Кнопки */
+.cta-button {
+    transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Границя та стиль для блоків */
+.feature, .team-member, .testimonial {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover, .team-member:hover, .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Анімації для заголовків */
+h2 {
+    animation: fadeIn 1s;
+}
+
+/* Параметри для різних елементів */
+.container {
+    padding: 20px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        max-width: 90%;
+    }
+}
+
+/* Параметри зображень */
+.gallery-container img {
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Стиль для відгуків */
+.testimonial {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Футер */
+footer {
+    background: #4CAF50;
+    padding: 20px 0;
+}

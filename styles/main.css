@@ -1,0 +1,198 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Контейнери */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Заголовки */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+/* Кнопки */
+.cta-button {
+    background: #fff;
+    color: #4CAF50;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #4CAF50;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* Розділи */
+.features, .gallery, .testimonials, .team {
+    padding: 40px 0;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Функції */
+.feature-container, .team-container, .gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Стиль функцій */
+.feature, .team-member, .testimonial {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature {
+    margin: 15px;
+    background: #e9ecef;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #4CAF50;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Стиль команди */
+.team-member {
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+/* Відгуки */
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: box-shadow 0.3s;
+}
+
+.testimonial img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Секція галереї */
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    margin-top: 40px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .feature-container, .testimonial-container, .team-container {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.features, .gallery, .testimonials, .team {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Плавна прокрутка для якорів */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стилі для заголовків */
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Загальний стиль кнопок */
+button {
+    cursor: pointer;
+}
